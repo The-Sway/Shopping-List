@@ -1,0 +1,260 @@
+.coolTitle {
+  text-align: center;
+  font-family: "Oswald", Helvetica, sans-serif;
+  font-size: 28px;
+  letter-spacing: 1px;
+  color: var(--accent);
+  margin: 0;
+}
+
+.coolTitle {
+  text-align: center;
+  font-family: "Oswald", Helvetica, sans-serif;
+  font-size: 28px;
+  letter-spacing: 1px;
+  color: var(--accent);
+  margin: 0;
+}
+.done {
+  text-decoration: line-through;
+}
+.delete {
+  margin-left: 10px;
+  background: transparent;
+  border: none;
+  color: #b33;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background 120ms ease, color 120ms ease, transform 120ms ease;
+}
+.delete:hover {
+  background: #b33;
+  color: white;
+  transform: scale(1.05);
+}
+.delete::before {
+  content: "×";
+  line-height: 1;
+}
+:root {
+  --max-width: 640px;
+  --accent: tomato;
+  --muted: #666;
+}
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+  margin: 0;
+  padding: 32px 16px;
+  color: #222;
+  background: #fafafa;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  background: white;
+  padding: 20px 24px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+}
+header {
+  text-align: center;
+  margin-bottom: 12px;
+}
+#first {
+  margin-top: 6px;
+  color: #444;
+  font-size: 0.95rem;
+  opacity: 0.9;
+  margin-bottom: 0;
+}
+.input-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+input#userinput {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+button#enter {
+  padding: 10px 14px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+ul#shopping-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul#shopping-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  margin: 8px 0;
+  background: linear-gradient(180deg, #fff, #fbfbfb);
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: transform 180ms ease, opacity 180ms ease, height 180ms ease, margin 180ms ease;
+}
+ul#shopping-list li.done {
+  color: var(--muted);
+}
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+  border: 0;
+  padding: 0;
+  margin: -1px;
+}
+.fade-in {
+  animation: fadeInUp 220ms ease;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* show × inside the circular delete button */
+.delete::before {
+  content: "×";
+  line-height: 1;
+}
+
+/***** Layout & list styles *****/
+:root {
+  --max-width: 640px;
+  --accent: tomato;
+  --muted: #666;
+}
+
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+  margin: 0;
+  padding: 32px 16px;
+  color: #222;
+  background: #fafafa;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  background: white;
+  padding: 20px 24px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+#first {
+  margin-top: 6px;
+  color: #444;
+  font-size: 0.95rem;
+  opacity: 0.9;
+  margin-bottom: 0;
+}
+
+.input-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+input#userinput {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button#enter {
+  padding: 10px 14px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+ul#shopping-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul#shopping-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  margin: 8px 0;
+  background: linear-gradient(180deg, #fff, #fbfbfb);
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: transform 180ms ease, opacity 180ms ease, height 180ms ease, margin 180ms ease;
+}
+
+.fade-in {
+  animation: fadeInUp 220ms ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+ul#shopping-list li.done {
+  color: var(--muted);
+}
+
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+  border: 0;
+  padding: 0;
+  margin: -1px;
+}
